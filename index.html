@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Expence Tracker</h1>
+    </header>
+    <main>
+        <p>Welcome to our Expence Tracker </p>
+        <form action="/submit_form"method="post">
+            <label for="name">Name:</label>
+            <input Id="name" type="name" name="name" required>
+            <br>
+            <label for="email">Emal:</label>
+            <input name="email"id="email" type="email" required>
+            <br>
+            
+            <label>Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" value="female" name="gender" required>
+            <label for="female">Female</label>
+            <br>
+            <label for="expence-name"> Expence Name:</label>
+            <input type="text" id="expence-name"name="expence-name" required>
+            <br>
+            <label for="expense-date">Date:</label>
+            <input type="date" id="expense-date" name="expence-date" required>
+            <br>
+            <label for="amount">Amount($):</label>
+            <input type="number" id="number" name="amount"step="0.01"required>
+            <br>
+            <label for="category">category</label>
+            <select id="category" name="category" required>
+                <option value="food">Food</option>
+                <option value="trasport">Transport</option>
+                <option value="health">Health</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" type="message" rows="4" cols="50" required></textarea>
+            <br>
+            <input type="submit" value="Add Expense">
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
